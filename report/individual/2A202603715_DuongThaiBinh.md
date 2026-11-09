@@ -129,16 +129,11 @@ HIỆN TẠI — 90 phút
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card |Pitch 3 card về báo cáo số liệu game (#10, #11, #12) | |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: "Checklist kỹ năng + Ctrl+F có đủ không?" cho card #1 |Câu hỏi này trở thành trọng tâm của CP6  |
+| Problem Statement |Viết Problem Statement v1, bảng thay đổi v0 → v1 và 5 tiêu chí đánh giá đạt/không đạt |Giúp nhóm xác định vấn đề rõ ràng, cụ thể và có thể đo lường; thống nhất phạm vi bài toán và có cơ sở kiểm chứng trước khi lựa chọn giải pháp. |
+| Mức can thiệp AI |Đặt bài toán vào ô mơ hồ thấp × phức tạp thấp; so sánh No AI / Rule / Workflow / Agent và chốt **Rule + Workflow** |Giải thích vì sao không chọn mức đơn giản hơn (Ctrl+F không bắt được từ đồng nghĩa) |
+| Quyết định |Đánh giá 4 rủi ro của giải pháp, đề xuất trạng thái Not Yet và xác định điều kiện chuyển sang Go/No-Go cùng các ngưỡng dừng sau 1 tuần pilot. |Nhóm chưa triển khai ngay mà ưu tiên kiểm chứng bằng pilot. Các tiêu chí Go/No-Go và ngưỡng dừng giúp nhóm đưa ra quyết định dựa trên bằng chứng, hạn chế rủi ro khi triển khai. |
 
 ---
 
@@ -146,12 +141,12 @@ HIỆN TẠI — 90 phút
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
+| CP1 Scan |Gợi ý thêm problem cho tôi |Thêm được ý #6 | |Thêm problem card #6 |
+| CP2 Problem Card |Đóng vai trò người phản biện |Chọn được top #3 problem card đáng chú ý |Chưa chỉ rõ vấn đề mà chỉ đặt câu hỏi chung chung |Thêm định nghĩa rõ ràng cho dữ liệu sai/đúng |
 | CP4 Research | | | | |
 | CP5 Quy trình | | | | |
 | CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP6 Mức can thiệp / quyết định |Đặt câu hỏi cho tôi (Google Pair) | |Cần thêm một số câu hỏi chặt chẽ hơn |Chỉnh sửa các tiêu chí đánh giá (eval) |
 
 ---
 
@@ -174,13 +169,19 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
 
+- Điều khiến tôi bất ngờ nhất là kết quả phỏng vấn các bạn cùng lớp. Ban đầu, tôi nghĩ rằng mọi người đều muốn AI tạo sẵn những đoạn code hoàn chỉnh để có thể copy-paste và tiết kiệm thời gian. Tuy nhiên, thực tế các bạn chia sẻ rằng việc sử dụng code do AI viết tuy nhanh lúc đầu, nhưng khi phát sinh lỗi thì lại gặp khó khăn vì không hiểu rõ logic bên trong. Điều này khiến các bạn phải mất thêm nhiều thời gian để đọc lại và tìm cách sửa lỗi. Từ insight đó, tôi nhận ra rằng AI trong việc học lập trình không nên chỉ đơn thuần viết code thay người học, mà nên đóng vai trò hỗ trợ giải thích lỗi, giúp hiểu nguyên nhân và gợi ý hướng giải quyết, để người học có thể tự tư duy và phát triển kỹ năng lập trình.
+
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+
+- Điều khó nhất khi viết Problem Statement là xác định phạm vi vấn đề và cách đo lường hiệu quả của giải pháp. Tôi phải cân nhắc giữa việc làm rõ vấn đề một cách cụ thể, nhưng không quá hẹp để vẫn có thể áp dụng cho nhiều tình huống, và việc xác định các chỉ số đo lường (metrics) sao cho phản ánh đúng mức độ cải thiện mà giải pháp mang lại. Ngoài ra, việc đảm bảo rằng Problem Statement đủ rõ ràng để mọi người trong nhóm hiểu và đồng thuận cũng là một thách thức.
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 - Tôi sẽ dành nhiều thời gian hơn để kiểm chứng vấn đề thực tế trước khi lựa chọn Top 3 Problems. Tôi sẽ tìm hiểu kỹ nguyên nhân gốc rễ, mức độ ảnh hưởng và nhu cầu của những người liên quan, thay vì chỉ ưu tiên các công việc lặp lại hoặc tốn nhiều thời gian.
 - Tôi sẽ phản biện nhóm mạnh hơn ở việc xác định giá trị thực sự của vấn đề, chủ động đặt câu hỏi, không ngại phản biện và tránh đồng ý quá nhanh với ý kiến số đông. Mục tiêu của phản biện là giúp nhóm hiểu đúng vấn đề và đưa ra lựa chọn có cơ sở hơn.
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+- Qua quá trình phân tích, tôi hiểu rằng vấn đề cốt lõi mà nhóm muốn giải quyết là sinh viên IT thường mất nhiều thời gian để tìm hiểu nguyên nhân và khắc phục những lỗi lập trình lặp đi lặp lại. Khi xem xét kỹ quy trình debug hiện tại, nhóm xác định được khó khăn lớn nhất nằm ở việc đọc hiểu thông báo lỗi trên terminal và xác định file hoặc đoạn code gây ra lỗi. Vì vậy, nhóm đề xuất metric là rút ngắn thời gian xử lý một lỗi trung bình từ 30 phút xuống dưới 10 phút. Tuy nhiên, nhóm cũng xác định rõ boundary: AI chỉ đóng vai trò hỗ trợ phân tích log, giải thích nguyên nhân và gợi ý vị trí cần kiểm tra, còn sinh viên phải tự quyết định cách sửa code để đảm bảo quá trình học tập không bị phụ thuộc vào AI. Dựa trên giới hạn này, nhóm lựa chọn mức can thiệp AI là Copilot/Workflow thay vì sử dụng Agent tự động xử lý toàn bộ. Qua đó, tôi nhận ra rằng một giải pháp AI hiệu quả không nhất thiết phải tự động hóa mọi thứ, mà quan trọng là giải quyết đúng khó khăn và vẫn giúp người dùng phát triển kỹ năng của mình**.
 
 ---
 

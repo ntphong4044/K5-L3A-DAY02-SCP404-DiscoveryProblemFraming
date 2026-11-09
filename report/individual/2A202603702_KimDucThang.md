@@ -174,16 +174,16 @@ Thực hành bằng code
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Pitch 3 card: #4 tìm nguyên nhân lỗi code, #5 tổng hợp yêu cầu từ tin tuyển dụng, #6 học công nghệ mới. | Card #5 được gộp với card #1 của Nhật Anh để hình thành candidate A1. |
+| Phản biện bài của bạn khác | Đặt câu hỏi về mức độ phổ biến của vấn đề, thời gian thực hiện và tính cần thiết của giải pháp AI. | Giúp làm rõ vấn đề có thực sự đáng giải quyết và có phù hợp để phát triển giải pháp hay không. |
+| Nhận phản biện | Câu hỏi tôi nhận được: Cần làm rõ bottleneck nằm ở bước nào, có số liệu chứng minh không và AI có thực sự cần thiết không. | Tôi đã sửa gì: Bổ sung thời gian cho từng bước, xác định bước 4 là bottleneck và làm rõ vai trò của AI trong quy trình. |
+| Gom cluster / cây OST | Tham gia đóng góp các vấn đề từ 3 Problem Card và kết nối card #5 với card #1 của Nhật Anh. | Hình thành candidate A1 từ các vấn đề có liên quan đến việc tìm kiếm và đánh giá cơ hội thực tập. |
+| Chọn candidate problem | Đề xuất card #5 – tổng hợp yêu cầu từ tin tuyển dụng làm vấn đề cần tập trung. | Candidate A1 được lựa chọn để tiếp tục phân tích và xây dựng giải pháp. |
+| Kiểm chứng / research | Kiểm tra Jobscan và Teal có hỗ trợ xử lý tin tuyển dụng (JD) bằng tiếng Việt hay không; hỗ trợ Bình đánh giá 4 rủi ro. | Bổ sung cơ sở để đánh giá tính khả thi của giải pháp và những hạn chế khi áp dụng AI với JD tiếng Việt. |
+| Quy trình nhóm | Vẽ quy trình hiện tại gồm 6 bước, mỗi bước có actor, input, output và thời gian. Xác định bottleneck ở bước 4: đối chiếu kỹ năng, mất khoảng 3–6 phút với tin tuyển dụng dài. Tiếp tục vẽ quy trình tương lai, phân chia CON NGƯỜI / RULE / AI, xác định boundary và phương án fallback về checklist + Ctrl+F khi AI sai. | Nhóm xác định được điểm tốn thời gian thực sự và có quy trình tương lai rõ ràng, vẫn đảm bảo người dùng kiểm tra kết quả AI. |
+| Problem Statement | Viết Problem Statement v0 với đủ 6 trường và xây dựng success metric gồm baseline, target và cách đo. | Làm rõ đối tượng, bối cảnh, vấn đề, nhu cầu và tiêu chí đánh giá hiệu quả giải pháp. |
+| Mức can thiệp AI | Phân chia công việc giữa con người, rule và AI; xác định AI chỉ hỗ trợ tổng hợp, đối chiếu thông tin, không thay thế quyết định của người dùng. | Giới hạn phạm vi AI, giảm rủi ro khi AI đưa ra kết quả không chính xác. |
+| Quyết định | Tham gia xây dựng và hoàn thiện candidate A1 từ card #5 và card #1 của Nhật Anh. | Có cơ sở để nhóm tiếp tục phát triển candidate A1 thông qua quy trình, Problem Statement và các tiêu chí đánh giá. |
 
 ---
 
@@ -191,35 +191,43 @@ Thực hành bằng code
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan | Tìm kiếm các ý tưởng ban đầu và gom nhóm các pain point (nỗi đau) thường gặp của sinh viên IT. | Gợi ý nhanh các bối cảnh mình chưa nghĩ tới, giúp brainstorm và phân loại ý tưởng tốc độ cao. | Đưa ra các vấn đề hơi chung chung, văn mẫu kiểu "quản lý thời gian", "áp lực điểm số", thiếu tính thực tế. | Gạn lọc và chọn đúng pain point thật sự của mình và bạn bè (như tốn thời gian debug code, làm báo cáo lặp đi lặp lại). |
+| CP2 Problem Card | Nhờ định dạng lại bảng Markdown, sửa lỗi hiển thị code và trau chuốt câu từ cho Job Story. | Cấu trúc bảng gọn gàng, format chuẩn Markdown nhanh, bắt lỗi cú pháp (dư dòng trống, thiếu cột) rất nhạy. | Có lúc tự động điền (bịa data) vào những cột mình chưa viết, câu chữ đôi khi nghe hơi "sách vở". | Xóa sạch những phần AI tự bịa, điền lại đúng "Dấu hiệu thật" và "Bằng chứng" từ thực tế (lịch sử git, lịch sử chat, lỗi terminal). |
+| CP4 Research | Tìm hiểu các workaround (cách giải quyết tạm) hiện có mà lập trình viên/sinh viên đang dùng để xử lý vấn đề. | Tổng hợp nhanh các tool, extension hoặc phương pháp phổ biến thay vì phải tự search Google từng cái. | Đề xuất một số tool quá to tát (hệ thống tracking của doanh nghiệp) không hợp với quy mô dự án cá nhân/sinh viên. | Bỏ qua các tool enterprise, chỉ giữ lại các workaround thực tế hay dùng (print log, debug bằng VS Code, hỏi bạn bè) và tự đánh giá lại hiệu quả. |
+| CP5 Quy trình | Chuyển đổi các bước thực hiện từ text thô sang dạng bảng/sơ đồ và tìm ra bottleneck. | Rút gọn câu chữ, giúp quy trình trông logic, rành mạch và dễ nhìn hơn rất nhiều. | Đôi khi gom nhầm 2 bước quan trọng làm 1, bỏ qua các bước nhỏ lẻ nhưng lại cực kỳ tốn thời gian trong thực tế. | Tách các bước bị gộp ra, bổ sung lại các "điểm chạm" thủ công (như đợi load, cấu hình môi trường) để làm rõ bottleneck thực sự. |
+| CP5–6 Problem Statement | Đóng vai trò reviewer để kiểm tra xem Problem Statement viết đã đủ sắc bén và rõ ràng chưa, nhờ gọt giũa lại. | Chỉ ra được những chỗ viết còn lan man, gợi ý cách viết ngắn gọn và xoáy sâu vào "nỗi đau" chính. | AI có xu hướng làm cho Problem Statement trở nên đao to búa lớn, giải quyết vấn đề ở tầm vĩ mô. | Kéo nó về lại đúng scope của một bài tập/đồ án sinh viên, chỉnh lại từ ngữ cho mộc mạc và sát với insight lúc phỏng vấn hơn. |
+| CP6 Mức can thiệp / quyết định | Gợi ý các hướng can thiệp dựa trên quy trình đã phân tích ở trên. | Phân tích rành mạch các ranh giới: đâu là bước con người vẫn phải làm, đâu là bước máy có thể làm thay. | Thường khuyên "đập đi xây lại" hoặc vẽ ra các giải pháp tự động hóa bằng AI phức tạp không cần thiết. | Loại bỏ các giải pháp quá sức, chốt lại mức độ can thiệp khả thi (chỉ cần làm template, tool cảnh báo hoặc script nhỏ) là đủ giải quyết vấn đề. |
 
 ---
 
 ## 6. Reflection (CP7)
 
-Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
-
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+Nghe các nhóm trình bày, tôi nhận ra một "vấn đề tốt" là vấn đề có thể đo lường được rất cụ thể. Ví dụ nhóm bạn đếm được chính xác "10 phút/JD" hay "45 phút/tối tìm thực tập", hoặc nhóm khác bóc tách được chuyện "phụ thuộc tiến độ FE và BE". Nó làm tôi giật mình nhìn lại vấn đề của mình, ban đầu tôi chỉ định nghĩa chung chung là "tốn thời gian fix bug" mà không hề có con số baseline (ví dụ tốn bao nhiêu phút cho một lỗi, một ngày gặp bao nhiêu lỗi). Tôi học được cách đào sâu vào các chỉ số thực tế (metrics) và bối cảnh (context) thay vì chỉ nói suông.
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+Có, rất nặng. Ngay khi chốt bài toán "sinh viên IT tốn thời gian sửa lỗi code", cả nhóm đã nhảy số ngay đến việc: "Hay làm một con AI Agent tích hợp thẳng vào VS Code, cứ báo lỗi là nó tự sửa rồi chạy lại luôn". Nhóm nhận ra mình bị "solution-first" khi đến phần vẽ Quy trình (CP5) và đánh giá rủi ro: nếu AI tự sửa code sai logic thì sao? Lúc đó cả nhóm mới khựng lại, quay về phân tích kỹ quy trình debug thủ công, nhận ra bước tốn thời gian nhất không phải là "gõ lại code" mà là "hiểu đoạn log báo lỗi". Từ đó, cả nhóm dẹp con Agent đi và tập trung vào luồng xử lý thông tin.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+Có. Lúc đầu tôi khăng khăng nỗi đau lớn nhất khi code là "không nhớ cú pháp (syntax)". Nhưng một bạn trong nhóm phản biện rất gắt: "Cú pháp thì Github Copilot hay tab code đã gợi ý hết rồi, mấy ai kẹt ở đó đâu!". Ngẫm lại dự án web dạo trước, đúng là tôi toàn kẹt ở mấy lỗi tích hợp hệ thống (như kết nối Database, sai config Docker) chứ không phải lỗi gõ sai chữ. Tôi đã đổi ý và chỉnh lại Problem Statement tập trung vào việc "mất thời gian truy vết nguyên nhân lỗi ở các file liên quan" thay vì lỗi syntax.
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+Rất bất ngờ. Khi phỏng vấn mấy bạn cùng lớp, tôi tưởng ai cũng thích AI đưa cho đoạn code hoàn chỉnh để copy-paste cho nhanh. Nhưng thực tế, các bạn bảo copy code của AI chạy được thì không sao, nhưng hễ lỗi tiếp thì "mù tịt" vì không hiểu logic ban đầu, lại tốn thời gian gấp đôi để đọc lại code của AI. Insight này làm tôi nhận ra: AI trong việc học code không nên là người "làm thay", mà phải là người "giải thích log lỗi và gợi ý hướng đi".
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+Khó nhất là việc cắt bỏ những từ ngữ đao to búa lớn và xác định đúng "Điều còn chưa chắc" (Uncertainties). Tôi hay bị tham, muốn giải quyết một bài toán to gọn gàng trong 2-3 câu, nên viết ra hay bị lan man kiểu "giúp sinh viên IT toàn diện". Việc phải gọt giũa lại để nhắm đúng vào 1 điểm chạm (bottleneck) duy nhất trong toàn bộ quy trình thực sự rất đau đầu.
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+Nếu làm lại, tôi sẽ yêu cầu nhóm đi thu thập số liệu (baseline) thực tế ngay từ tuần đầu tiên, ví dụ như bật tool đo xem thực sự mở terminal lên xem lỗi mất bao nhiêu phút, thay vì ngồi đoán mò với nhau. Tôi cũng sẽ phản biện nhóm mạnh hơn ở phần Boundary (Ranh giới), ép mọi người phải trả lời câu hỏi: "Nếu AI làm sai thì hậu quả tệ nhất là gì?" sớm hơn để không bị cuốn vào các giải pháp quá sức.
 
-**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+**6.7. Hiểu bài**
+Bài toán của nhóm xuất phát từ **problem** là sinh viên IT mất quá nhiều thời gian để tìm nguyên nhân và sửa các lỗi code lặp lại. Khi bóc tách **quy trình** debug thủ công, nhóm nhận ra bottleneck nằm ở bước đọc hiểu log terminal và tìm kiếm file liên quan. Từ đó, nhóm đặt ra **metric** là giảm thời gian fix một lỗi trung bình từ 30 phút xuống dưới 10 phút, nhưng phải thiết lập **boundary** nghiêm ngặt: AI chỉ phân tích log và gợi ý chỗ sai, con người (sinh viên) vẫn là người chốt hạ và sửa code để đảm bảo hiểu bài. Chính vì ranh giới này, nhóm chọn **mức can thiệp AI** ở dạng Copilot/Workflow (công cụ hỗ trợ theo luồng) thay vì Agent tự động hóa hoàn toàn. **Quyết định** cuối cùng là tạo ra một quy trình dùng AI để tóm tắt log lỗi và trích xuất đúng file cần sửa, giải quyết đúng nút thắt mà không làm mất đi tư duy lập trình của sinh viên.
 
 ---
 
 ## 7. Tài liệu tham khảo
 
--
+- Báo cáo nhóm: [report/team/group_report.md](../team/group_report.md)
+- Jobscan — bảng giá: https://www.jobscan.co/pricing
+- Teal — Resume Job Description Match: https://tealhq.com/tool/resume-job-description-match
+- Rob Fitzpatrick, *The Mom Test*; Teresa Torres, *Continuous Discovery Habits* (Opportunity Solution Tree) — theo [docs/03-international-frameworks.md](../../docs/03-international-frameworks.md)

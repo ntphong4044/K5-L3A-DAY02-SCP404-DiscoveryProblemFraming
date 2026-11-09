@@ -165,10 +165,13 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
     - Một vấn đề cần có bằng chứng cụ thể như thời gian xử lý, tần suất xảy ra hoặc mức độ ảnh hưởng đến công việc
     - Không chỉ quan tâm đến khó khăn của bản thân mà còn cần xem xét nhu cầu của đồng nghiệp và người quản lý
 - Điều quan trọng nhất tôi nhận ra: Một vấn đề "đáng được giải quyết" không nhất thiết phải là 1 vấn đề lớn hoặc phức tạp
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
 - Trong quá trình làm việc, nhóm có xu hướng nghĩ đến sử dụng AI để tự động xử lý công việc, trong khi chưa nắm rõ được nguồn gốc của vấn đề. Để giải quyết, từng thành viên trong nhóm quay lại CP2, phân tích kỹ lưỡng các problem card, đặc biệt các phần Job Story, Actor, Bottleneck để tìm ra nguyên nhân gốc rễ và mức độ ảnh hưởng của từng vấn đề
+
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 - Ban đầu, tôi cho rằng việc thu thập số liệu game định kỳ là vấn đề quan trọng nhất, bởi việc này rất mất thời gian và là gốc rễ cho mọi vấn đề xoay quanh game đó. Tuy nhiên, tôi nhận được phản biện rằng quy trình thu thập dữ liệu đều được quy định rõ ràng, chỉ cần làm theo đúng quy trình là được; trong khi khó khăn thực sự nằm ở việc phân tích số liệu và trình bày thông tin phù hợp cho CEO và Senior GD, bởi quan điểm của cả 3 actor có thể khác nhau, gây xung đột trong quá trình báo cáo. 
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
@@ -176,6 +179,7 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 - Tôi sẽ dành nhiều thời gian hơn để kiểm chứng vấn đề thực tế trước khi lựa chọn Top 3 Problems. Tôi sẽ tìm hiểu kỹ nguyên nhân gốc rễ, mức độ ảnh hưởng và nhu cầu của những người liên quan, thay vì chỉ ưu tiên các công việc lặp lại hoặc tốn nhiều thời gian.
 - Tôi sẽ phản biện nhóm mạnh hơn ở việc xác định giá trị thực sự của vấn đề, chủ động đặt câu hỏi, không ngại phản biện và tránh đồng ý quá nhanh với ý kiến số đông. Mục tiêu của phản biện là giúp nhóm hiểu đúng vấn đề và đưa ra lựa chọn có cơ sở hơn.
+
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
 
 ---

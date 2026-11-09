@@ -110,3 +110,28 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 - Chọn mức đơn giản nhất đủ dùng: chỉ đưa AI vào đúng một bước cần hiểu nghĩa, các bước khác để Rule và con người.
 - "Not Yet" vẫn là một kết luận tốt khi rủi ro Value còn Cao; quan trọng là có điều kiện đo được để chuyển sang Go hay No-Go.
+
+### KimDucThang-2A202603702
+
+**Phần việc phụ trách:**
+
+- Người chính CP5: quy trình hiện tại/tương lai, bảng before/after, Problem Statement v0.
+- Hỗ trợ CP4 (research) và CP6 (đánh giá 4 rủi ro, quyết định).
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Pitch 3 card (#4 tìm nguyên nhân lỗi code, #5 tổng hợp yêu cầu từ tin tuyển dụng, #6 học công nghệ mới); card #5 được gộp với card #1 của Nhật Anh thành candidate A1.
+- Vẽ quy trình hiện tại 6 bước, mỗi bước có actor, input, output, thời gian; đánh dấu bottleneck ở bước 4 (đối chiếu kỹ năng, 3–6 phút với tin dài).
+- Vẽ quy trình tương lai: tách rõ bước CON NGƯỜI / RULE / AI, ghi boundary và phương án quay về checklist + Ctrl+F khi AI sai.
+- Lập bảng before/after (số bước, thời gian, số bước thủ công, rủi ro mới).
+- Viết Problem Statement v0 đủ 6 trường, success metric có baseline, target và cách đo.
+- Hỗ trợ research: kiểm tra Jobscan/Teal có chạy được với JD tiếng Việt không; hỗ trợ Bình chấm 4 rủi ro.
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- `report/team/group_report.md` mục 4 (4.1, 4.2, 4.3) và mục 5; hỗ trợ mục 3.3 và 8.1.
+
+**Điều mình học được từ phần nhóm:**
+
+- Vẽ quy trình có số phút từng bước mới thấy bottleneck thật nằm ở bước đối chiếu chứ không phải bước đọc.
+- Quy trình tương lai bắt buộc phải có bước con người kiểm tra và phương án quay về; nếu AI sai thì vẫn phải làm việc được bằng cách cũ.

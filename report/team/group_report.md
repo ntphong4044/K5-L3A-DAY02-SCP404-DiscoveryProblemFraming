@@ -193,36 +193,73 @@ Bước trích kỹ năng + so khớp (B2, B4, B5) đã có nhiều công cụ l
 Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
 
 ```text
+HIỆN TẠI — khoảng 4 phút (tin ngắn, chuẩn) đến 10 phút (tin dài, không chuẩn) / 1 JD
 
+[1. Mở tin: TopCV / LinkedIn / group FB / web công ty: 0,5']
+        ↓
+[2. Đọc tìm phần yêu cầu + điều kiện cứng (số năm KN, ngoại ngữ): 1–2']
+        ↓
+[3. Mở file note kỹ năng / CV của mình: 0,5']
+        ↓
+[4. Đối chiếu từng yêu cầu kỹ năng, tự đoán từ đồng nghĩa: 1–6']  ← BOTTLENECK
+        ↓
+[5. Ghi lại kỹ năng còn thiếu: 0,5–1']
+        ↓
+[6. Quyết định nộp / bỏ: 0,5']
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | SV | Link tin tuyển dụng | Trang JD đang mở | 0,5' / tin; 10–20 tin/tuần | Khoảng một nửa là tin từ group FB, web công ty |
+| 2 | SV | Text JD | Biết tin có điều kiện cứng không hợp không | 1–2' | Tin đòi 1+ năm KN thường bị bỏ ở đây |
+| 3 | SV | File note kỹ năng / CV | Danh sách kỹ năng của mình | 0,5' | Mỗi lần lại mở lại |
+| 4 | SV | Yêu cầu trong JD + danh sách kỹ năng | Biết yêu cầu nào có / thiếu | 1–2' (tin ngắn) đến 3–6' (tin dài) | **Bottleneck**: JD gọi cùng kỹ năng bằng từ khác ("state management" ↔ Provider, "làm việc với API" ↔ RESTful) |
+| 5 | SV | Kết quả bước 4 | Ghi chú kỹ năng thiếu | 0,5–1' | Hay bị bỏ qua khi vội |
+| 6 | SV | Ghi chú + cảm giác | Nộp / bỏ | 0,5' | Có lúc nộp mà không chắc mình đủ điều kiện |
 
-**Bottleneck chính:**
+**Bottleneck chính:** Bước 4, đối chiếu kỹ năng với JD dài, viết không chuẩn: 3–6 phút/tin, vì phải tự đoán từ đồng nghĩa và dễ đoán sai.
+
 
 ### 4.2. Quy trình tương lai
 
 Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
 
 ```text
+TƯƠNG LAI — kỳ vọng ≤ 3 phút / 1 JD dài
 
+[1. SV mở tin, copy text JD]                                   — CON NGƯỜI
+        ↓
+[2. Lọc điều kiện cứng: số năm KN, ngoại ngữ, địa điểm]         — RULE (từ khóa)
+        ├── Không đạt → hiện "Gợi ý bỏ" + câu trích từ JD → SV liếc 10 giây, đồng ý hay không
+        ↓ Đạt
+[3. Trích danh sách yêu cầu kỹ năng, mỗi yêu cầu kèm câu gốc]    — AI
+        ↓
+[4. Đối chiếu với file kỹ năng của SV → Có / Thiếu / Không chắc] — AI
+        ↓
+[5. SV kiểm tra bảng, xem kỹ mọi dòng "Không chắc" và "Thiếu"]  — CON NGƯỜI (HITL)
+        ↓
+[6. SV quyết định nộp / bỏ, tự nộp]                             — CON NGƯỜI
+
+BOUNDARY:
+- AI không quyết định nộp/bỏ, không tự nộp, không sửa CV.
+- Mỗi yêu cầu phải có câu trích nguyên văn từ JD; không có câu trích = coi như AI bịa.
+- Khi không chắc, AI phải ghi "Không chắc", không được ghi "Thiếu".
+- SV chỉ dán danh sách kỹ năng, không dán CV có số điện thoại, địa chỉ.
+
+PHƯƠNG ÁN QUAY VỀ:
+- Câu trích không tìm thấy trong JD, hoặc SV phải sửa > 2 dòng
+  → bỏ kết quả AI, quay về checklist kỹ năng + Ctrl+F (cách hiện tại).
 ```
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | | | |
-| Tổng thời gian | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Rủi ro mới phát sinh | | | |
+| Số bước | 6 | 6 | Số bước giữ nguyên nhưng 3 bước do máy làm |
+| Tổng thời gian | 4–10' / tin | ≤ 3' / tin dài | Tin bị loại ở bước 2 chỉ mất khoảng 1' |
+| Số bước thủ công | 6 | 3 | Còn bước 1, 5, 6 |
+| Bottleneck chính | Bước 4: tự đối chiếu (3–6') | Bước 5: SV kiểm bảng (1–2') | Kiểm có câu trích nên nhanh hơn tự đọc lại |
+| Rủi ro mới phát sinh | — | AI hiểu sai / bỏ sót yêu cầu; SV tin mù kết quả; lộ thông tin nếu dán cả CV | Xử lý bằng câu trích bắt buộc, nhãn "Không chắc", chỉ dán danh sách kỹ năng |
 
 ---
 
@@ -230,16 +267,19 @@ Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người*
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
+| **Actor** | Sinh viên IT năm cuối đang tìm thực tập (Backend, Mobile) ở Hà Nội, đọc khoảng 10–20 tin/tuần, trong đó khoảng một nửa là tin từ group Facebook, web công ty |
+| **Quy trình** | Mở tin → đọc tìm phần yêu cầu → mở note kỹ năng → đối chiếu từng yêu cầu → ghi kỹ năng thiếu → quyết định nộp/bỏ |
+| **Bottleneck** | Bước 4: đối chiếu kỹ năng với JD, mất 3–6 phút/tin với JD dài vì JD gọi kỹ năng bằng từ khác với cách SV ghi |
+| **Impact** | Khoảng 10 tin dài/tuần × 8–10' ≈ 1,5 giờ/tuần; có lúc nộp mà không chắc mình đủ điều kiện, hoặc bỏ nhầm tin hợp |
+| **Success Metric** (baseline → target, cách đo) | (1) Thời gian quyết định 1 tin dài: 8–10' → ≤ 3'. (2) Tỷ lệ dòng đối chiếu đúng ≥ 90%. Cách đo: SV bấm giờ 10 tin dài trước và sau khi dùng; ghi số dòng phải sửa |
+| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | AI không quyết định nộp/bỏ, không tự nộp, không sửa CV. Mỗi yêu cầu phải kèm câu trích từ JD. SV kiểm tra mọi dòng trước khi quyết định |
 
-Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
+Phản biện nhận được từ AI (nhờ AI đóng vai PM hoài nghi, chỉ chỉ ra lỗ hổng, không viết lại) và nhóm có đồng ý không:
 
--
+- *"Baseline 8–10' chỉ lấy từ 1 người tự ước lượng, chưa bấm giờ thật."* → **Đồng ý.** Giữ con số nhưng ghi rõ là ước tính; phải đo thật trước khi pilot (xem mục 8).
+- *"Tỷ lệ đúng ≥ 90% do chính SV tự chấm thì dễ chủ quan."* → **Đồng ý.** v1 thêm cách chấm: một bạn khác trong nhóm làm bảng đối chiếu tay trên cùng 10 JD để so.
+- *"Chỉ tốn khoảng 1,5 giờ/tuần, có đáng làm không?"* → **Đồng ý một phần.** Mùa tìm thực tập kéo dài 2–3 tháng, và rủi ro bỏ nhầm tin hợp còn đáng ngại hơn số phút. Nhưng nhóm ghi điểm này vào rủi ro Value (mục 8.1).
+- *"Tin đòi 1+ năm KN thì đâu cần AI, sao lại cho hết vào?"* → **Đồng ý.** v1 tách bước lọc điều kiện cứng ra làm Rule, AI chỉ chạy với tin đã qua lọc.
 
 ---
 

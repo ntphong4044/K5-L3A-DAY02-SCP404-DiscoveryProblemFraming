@@ -196,7 +196,6 @@ HIỆN TẠI — 150 phút/lần ôn
 | CP4 Research | | | | |
 | CP5 Quy trình | | | | |
 | CP5–6 Problem Statement | Nhóm nhờ AI đóng vai PM hoài nghi phản biện Problem Statement v0, chỉ hỏi lỗ hổng, không cho viết lại | Chỉ ra baseline mới là ước tính, tỷ lệ đúng do SV tự chấm dễ chủ quan, tin đòi 1+ năm KN không cần AI | Hỏi "1,5 giờ/tuần có đáng làm không" nhưng chỉ nhìn số phút, bỏ qua rủi ro bỏ nhầm tin hợp | Nhóm chỉ đồng ý một phần điểm này và đưa nó vào rủi ro Value thay vì bỏ problem |
-| Rà soát trước khi nộp | Nhờ AI (Claude) đối chiếu báo cáo nhóm với RUBRIC | Phát hiện TEAM.md còn trống (cả nhóm có thể bị 0 phần nhóm), chỗ còn sót chữ "mô phỏng", giá Teal ghi sai | AI tự ghi buổi phỏng vấn là "buổi chiều" và tự ước thời lượng "5–10 phút" dù không có căn cứ; con số giá cũ AI không tự kiểm được | Tôi sửa lại thành buổi sáng (lab học sáng); tự mở trang giá Jobscan, Teal chụp màn hình để lấy đúng giá theo tháng |
 
 ---
 
@@ -206,17 +205,31 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
+Điều mình chú ý nhất là Nhật Anh và Thắng không hề bàn trước mà vẫn cùng gặp chuyện đọc JD (card #1 và #5). Hai người gặp cùng một vấn đề như vậy đáng tin hơn một mình tự nghĩ ra. Card của Bình về báo cáo game thì cho mình thấy ngược lại: actor là CEO, người mà nhóm không thể phỏng vấn được, nên dù vấn đề có thật cũng rất khó kiểm chứng.
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+Có, khá nhiều. Lúc dựng cây OST, nhóm phải gạch bỏ 4 ý thật ra là giải pháp: “xem tin ở một chỗ”, “tool trích kỹ năng”, “AI tóm tắt theo chương” và “dashboard”. Ngay Job Story #1 của mình lúc đầu cũng ghi là “tập trung vào một nơi”, tức là đã nói luôn cách làm chứ chưa nói pain. Nhóm xử lý bằng cách viết lại từng ý thành pain có số liệu.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
+Có. Card #7 (thông báo, deadline) của mình được 30 điểm, chỉ kém A1 có 1 điểm. Điều làm mình chịu nhường là vấn đề lấy tin nhắn Zalo: muốn làm thật thì sẽ dính tin nhắn riêng của người khác, khó làm trong một buổi lab. Nhóm để #7 làm phương án dự phòng.
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
+Bất ngờ nhất là phần research: LinkedIn Job Match đã làm gần đúng việc nhóm định làm, còn Jobscan thì tới $49,95/tháng (hoặc $29,98/tháng nếu trả theo quý), đắt với sinh viên. Cuộc phỏng vấn mà nhóm thực hiện cũng làm mình nghĩ lại: nếu đa số tin bị loại chỉ vì số năm kinh nghiệm thì Ctrl+F đã đủ, AI chỉ có ích với những tin dài, viết không chuẩn.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+Khó nhất với mình là baseline. Con số 8–10 phút chỉ là ước tính chứ chưa ai bấm giờ thật, nên mọi target đặt ra phía sau đều đứng trên một con số chưa chắc. Mình hiểu ra metric không chỉ cần target mà còn cần cách đo đáng tin.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
+Mình sẽ bấm giờ thật thay vì ước lượng, và phỏng vấn nhiều hơn 2 người. Mình cũng sẽ phản biện mạnh hơn ngay từ CP3: ép nhóm đo thử vài JD trước khi chốt candidate, thay vì để đến CP4 mới thấy con số có thể thấp hơn nhiều so với ước lượng.
+
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+Bài của nhóm mình xoay quanh việc sinh viên đi tìm thực tập phải đọc những JD dài, viết không chuẩn rồi tự so với kỹ năng của mình để quyết định có nộp hay không. Quy trình hiện tại có 6 bước, trong đó bước 4 là chậm nhất, mất khoảng 3–6 phút mỗi tin, vì JD hay gọi cùng một kỹ năng bằng từ khác nên phải tự đoán. Mục tiêu nhóm đặt ra là giảm thời gian quyết định từ khoảng 8–10 phút xuống còn tối đa 3 phút mỗi tin, kết quả đối chiếu đúng từ 90% trở lên và người dùng phải sửa không quá 2 dòng. Ranh giới cho AI là không được quyết định nộp hay bỏ thay người dùng, mỗi yêu cầu phải kèm câu trích từ JD, và khi không chắc thì phải ghi "Không chắc" chứ không được ghi "Thiếu". Về mức can thiệp, nhóm dùng Rule để lọc trước các điều kiện cứng như số năm kinh nghiệm, còn AI chỉ tham gia ở bước 3–4 trong một Workflow cố định. Cuối cùng nhóm chọn Not Yet vì rủi ro Value còn cao, chưa có bằng chứng thật. Nhóm sẽ chuyển sang Go nếu phỏng vấn thấy ít nhất 2/3 người mất từ 6 phút trở lên cho mỗi tin. Còn nếu sau 1 tuần pilot mà thời gian không giảm xuống dưới 5 phút thì dừng lại và quay về cách làm cũ.
 
 ---
 

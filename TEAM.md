@@ -61,6 +61,31 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 - Hội tụ bằng lập luận khó hơn bỏ phiếu: card #7 của mình chỉ kém 1 điểm nhưng vẫn bị loại vì vướng tin nhắn riêng tư trên Zalo, tức là điểm số chưa đủ, phải xét cả rủi ro dữ liệu.
 - Phải tách opportunity với solution ngay trên cây OST, vì nhiều Job Story trong nhóm (kể cả của mình) ban đầu là giải pháp trá hình như "xem ở một chỗ", "tập trung vào một nơi".
 
+### DoNhatAnh-2A202603701
+
+**Phần việc phụ trách:**
+
+- Người chính CP4: Assumption Map, phỏng vấn kiểm chứng và research giải pháp đã có.
+- Hỗ trợ CP5: vẽ quy trình trước/sau.
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Pitch 3 card về tìm thực tập (#1 đọc JD và đối chiếu kỹ năng, #2 theo dõi hồ sơ đã nộp, #3 tin mới ở nhiều nguồn); card #1 được nhóm chọn làm candidate (31/35).
+- Viết Assumption Map 6 giả định, chọn kiểm chứng trước #1, #2, #4 (quan trọng cao, ít bằng chứng).
+- Phỏng vấn trực tiếp 2 bạn nhóm khác theo The Mom Test, viết 2 Interview Snapshot và bảng tổng hợp có tín hiệu phản bác (người #1 chỉ mất 3–5 phút, Ctrl+F là đủ).
+- Research 3 công cụ (Jobscan, Teal, LinkedIn Job Match), chỉ ra khoảng trống: các công cụ chỉ tốt với tin trên nền tảng của họ và chỉ nhằm sửa CV cho qua ATS.
+- Đề xuất sửa problem sau kiểm chứng: tách tin bị loại vì điều kiện cứng sang Rule, thu hẹp vào JD dài/không chuẩn từ group FB, web công ty.
+- Hỗ trợ Thắng mô tả các bước của quy trình hiện tại (thao tác thật khi đọc JD).
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- `report/team/group_report.md` mục 3 (3.1 Assumption Map, 3.2 Snapshot + "Nhóm đã sửa problem thế nào", 3.3 Research); hỗ trợ mục 4.1.
+
+**Điều mình học được từ phần nhóm:**
+
+- Hỏi về lần gần nhất đã xảy ra cho ra số liệu thật hơn hỏi "bạn có thấy mất thời gian không"; một người phản bác (chỉ mất 3–5 phút) lại giúp nhóm thu hẹp problem đúng chỗ.
+- Research giải pháp có sẵn có thể làm đổi hướng cả bài: LinkedIn đã giải phần lớn với tin trên LinkedIn, nên nhóm không tự xây công cụ so khớp.
+
 ### DuongThaiBinh-2A202603715
 
 **Phần việc phụ trách:**

@@ -60,3 +60,28 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 - Hội tụ bằng lập luận khó hơn bỏ phiếu: card #7 của mình chỉ kém 1 điểm nhưng vẫn bị loại vì vướng tin nhắn riêng tư trên Zalo, tức là điểm số chưa đủ, phải xét cả rủi ro dữ liệu.
 - Phải tách opportunity với solution ngay trên cây OST, vì nhiều Job Story trong nhóm (kể cả của mình) ban đầu là giải pháp trá hình như "xem ở một chỗ", "tập trung vào một nơi".
+
+### DuongThaiBinh-2A202603715
+
+**Phần việc phụ trách:**
+
+- Người chính CP6: ma trận mơ hồ × phức tạp, so sánh 4 mức, AI Canvas, câu hỏi PAIR, Problem Statement v1, tiêu chí đánh giá, 4 rủi ro và quyết định.
+- Hỗ trợ CP3 (chấm điểm shortlist) và CP5 (Problem Statement v0).
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Pitch 3 card về báo cáo số liệu game (#10, #11, #12); đặt câu hỏi "Checklist kỹ năng + Ctrl+F có đủ không?" cho card #1, câu hỏi này thành trọng tâm của CP6.
+- Đặt bài toán vào ô mơ hồ thấp × phức tạp thấp; so sánh No AI / Rule / Workflow / Agent và chốt **Rule + Workflow**, giải thích vì sao không chọn mức đơn giản hơn (Ctrl+F không bắt được từ đồng nghĩa).
+- Điền AI Canvas, trả lời 2 câu PAIR (augment; ghi "Thiếu" nhầm tệ hơn nên dùng nhãn "Không chắc").
+- Viết Problem Statement v1, bảng thay đổi v0 → v1 và 5 tiêu chí đánh giá đạt/không đạt.
+- Chấm 4 rủi ro, ra quyết định **Not Yet**, viết điều kiện chuyển Go/No-Go và ngưỡng dừng sau 1 tuần pilot.
+- Hỗ trợ Phong chấm bảng shortlist 7 tiêu chí; hỗ trợ Thắng viết phần Boundary trong v0.
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- `report/team/group_report.md` mục 6, 7, 8; hỗ trợ mục 2.4 và mục 5, commit của tài khoản `thaibinh9312`.
+
+**Điều mình học được từ phần nhóm:**
+
+- Chọn mức đơn giản nhất đủ dùng: chỉ đưa AI vào đúng một bước cần hiểu nghĩa, các bước khác để Rule và con người.
+- "Not Yet" vẫn là một kết luận tốt khi rủi ro Value còn Cao; quan trọng là có điều kiện đo được để chuyển sang Go hay No-Go.

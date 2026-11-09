@@ -107,47 +107,82 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
+| 1 | Sinh viên IT khác (ngoài nhóm) đang tìm thực tập cũng đọc nhiều JD mỗi tuần (≥10 JD) và mất trên 5 phút/JD mới quyết định được | Value | 5 | 2 | ✅ |
+| 2 | Bước mất thời gian nhất là **tự đối chiếu** yêu cầu với kỹ năng của mình, chứ không phải bước đọc để tìm phần yêu cầu | Value | 5 | 1 | ✅ |
+| 3 | Có khá nhiều JD (khoảng 1/3 trở lên) đọc hết rồi mới thấy không hợp, tức là thời gian đó bị phí | Value | 4 | 2 | ✅ |
+| 4 | Checklist kỹ năng + Ctrl+F **chưa đủ**, vì JD hay viết cùng một kỹ năng bằng nhiều cách (vd "RESTful API" / "làm việc với API", "ReactJS" / "React") | Feasibility | 4 | 1 | ✅ |
+| 5 | Sinh viên chịu dán JD + danh sách kỹ năng vào một công cụ và tự kiểm tra lại kết quả, không tin mù | Usability | 3 | 2 | — (để sau) |
+| 6 | Đưa danh sách kỹ năng / CV cá nhân vào công cụ bên ngoài không làm sinh viên ngại về thông tin cá nhân | Viability | 3 | 3 | — (để sau) |
 
-*Điền 4–6 giả định; xóa dòng thừa.*
-
-Giả định nhóm kiểm chứng trong buổi này:
+Giả định nhóm kiểm chứng trong buổi này:#1, #2 và #4 (quan trọng cao nhưng gần như chưa có bằng chứng, vì 10 phút/JD hiện mới là ước lượng). #3 hỏi luôn trong lúc phỏng vấn. #5, #6 ít quan trọng hơn ở giai đoạn này nên để sau.
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
+Cách đã dùng: Phỏng vấn trực tiếp 2 bạn học nhóm khác ngồi cạnh, trong buổi sáng lab Day 02, theo 3 luật The Mom Test (hỏi về lần gần nhất đã xảy ra, không hỏi "bạn có muốn…").
 
 Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
 
+*Snapshot #1*
+
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+| Người được hỏi (vai trò, không ghi tên thật) | SV năm cuối CNTT, đang tìm thực tập Backend Java ở Hà Nội (bạn học lớp L3A, nhóm khác) |
+| Khi nào, hỏi bằng cách nào | Buổi sáng trong buổi lab Day 02; phỏng vấn trực tiếp bạn ngồi bên cạnh, khoảng 5–10 phút |
+| Câu nói đáng nhớ nhất (nguyên văn) | "Mình nhìn tiêu đề với số năm kinh nghiệm trước, ghi Intern mà đòi 1 năm là tắt luôn." |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Tối qua tìm "Backend Intern Hà Nội" trên TopCV, mở khoảng 8 tin thì 5 tin là vị trí Middle/Senior lẫn vào kết quả, phải mở ra mới biết |
+| Hiện đang xử lý bằng cách nào (workaround)? | Ctrl+F chữ "kinh nghiệm", "năm"; có một file note ghi sẵn kỹ năng của mình để so |
+| Mất bao lâu, bao lần? | Khoảng 3–5 phút/tin, khoảng 15 tin/tuần; tin nào hợp thì mới đọc kỹ phần kỹ năng |
+| Insight / opportunity rút ra | Phần lớn tin bị bỏ vì **số năm kinh nghiệm**, loại này Ctrl+F/lọc là đủ (Rule). Thời gian đối chiếu kỹ năng chỉ thật sự tốn với những tin đã qua vòng lọc đầu |
+
+*Snapshot #2*
+
+| Trường | Nội dung |
+|---|---|
+| Người được hỏi (vai trò, không ghi tên thật) | SV năm cuối CNTT, đang tìm thực tập Mobile (Flutter) ở Hà Nội (bạn học lớp L3A, nhóm khác) |
+| Khi nào, hỏi bằng cách nào | Buổi sáng trong buổi lab Day 02; phỏng vấn trực tiếp bạn ngồi bên cạnh, khoảng 5–10 phút |
+| Câu nói đáng nhớ nhất (nguyên văn) | "Đọc thì nhanh, cái lâu là không biết họ ghi 'có kiến thức state management' thì mình mới dùng Provider có được tính không." |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Tuần trước thấy tin của một công ty nhỏ đăng trong group Facebook, JD dài, viết lẫn tiếng Anh. Đọc và tự so mất gần 10 phút, cuối cùng vẫn nộp vì không chắc mình đủ hay chưa |
+| Hiện đang xử lý bằng cách nào (workaround)? | Hỏi bạn cùng lớp đang làm Mobile; thỉnh thoảng dán JD vào ChatGPT hỏi nhưng phải kiểm lại vì có lúc nó nói chung chung |
+| Mất bao lâu, bao lần? | Tin dài, không chuẩn: khoảng 8–10 phút/tin; khoảng 10 tin/tuần, trong đó tầm một nửa là tin từ group/web công ty |
+| Insight / opportunity rút ra | Bottleneck nằm ở bước **đối chiếu khi JD dùng từ khác với kỹ năng mình ghi** (khớp giả định #2, #4). Pain rõ nhất với tin từ group FB/web công ty, đúng phần mà công cụ có sẵn chưa phủ |
+
 
 Tổng hợp:
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| | | | |
+| Phỏng vấn | 2 | Cả 2 người đọc 10–15 tin/tuần; người #2 mất 8–10 phút/tin dài ở bước đối chiếu, đã từng nộp mà không chắc mình đủ điều kiện | Người #1 chỉ mất 3–5 phút/tin, chủ yếu bỏ vì số năm kinh nghiệm, Ctrl+F là đủ → không phải JD nào cũng là pain |
+| Research (mục 3.3) | 3 công cụ | Đã có nhiều công cụ làm bước trích kỹ năng + so khớp → chứng tỏ đây là pain có thật, có người trả tiền | Vì đã có công cụ, pain có thể đã được giải một phần cho tin trên LinkedIn |
 
-**Nhóm đã sửa problem thế nào sau kiểm chứng:**
+
+**Nhóm đã sửa problem thế nào sau kiểm chứng:** 
+1. **Tách 2 loại JD:** loại bị loại vì điều kiện dễ thấy (số năm kinh nghiệm, ngoại ngữ) thì checklist + Ctrl+F/lọc là đủ → để mức **Rule/No AI**, không đưa vào problem chính.
+2. **Thu hẹp bottleneck:** pain thật nằm ở bước **đối chiếu kỹ năng với những JD dài, viết không chuẩn** (tin từ group FB, web công ty nhỏ), khi JD gọi cùng một kỹ năng bằng từ khác.
+3. **Sửa baseline:** từ "~10 phút/JD cho mọi JD" thành "3–5 phút với JD ngắn/chuẩn, 8–10 phút với JD dài/không chuẩn" (cần đo lại bằng phỏng vấn thật).
+4. Vì mới hỏi 2 người và số phút do họ tự ước lượng (chưa bấm giờ), giả định #1 mới có **bằng chứng yếu** → CP6 nghiêng về **Not Yet** cho đến khi hỏi thêm người và đo thật.
+
+Ngoài ra, phần research cũng làm nhóm sửa một điểm: các công cụ có sẵn chủ yếu giúp **chấm điểm CV để sửa CV cho qua lọc hồ sơ tự động (ATS)**, và chỉ chạy tốt với tin đăng ngay trên nền tảng của họ. Vì vậy nhóm thu hẹp problem thành: *"Với JD lấy từ **group Facebook, website công ty** (không có sẵn phần so khớp), sinh viên mất thời gian đọc và tự đối chiếu để quyết định **nộp hay bỏ**"*, chứ không phải "chấm điểm CV".
+
 
 ### 3.3. Research giải pháp đã có
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| Jobscan (so CV với JD, ra Match Rate) | https://www.jobscan.co/jobscan-tutorial | B2 + B4 + B5: dán CV và JD vào, ra % khớp, liệt kê hard skill / soft skill còn thiếu | Làm đúng phần "trích kỹ năng + so khớp", không cần tự xây | Mục tiêu là **sửa CV cho qua ATS**, không nói nên nộp hay bỏ. Bản free chỉ được 5 lượt scan/tháng; bản trả phí $49,95/tháng, hoặc $29,98/tháng nếu trả theo quý (đắt với SV). Nhóm chưa thử với JD tiếng Việt | Phần so khớp đã có người làm, **không nên tự xây từ đầu**; điểm % chỉ là tham khảo |
+| Teal — Resume Job Description Match | https://tealhq.com/tool/resume-job-description-match | B2 + B4 + B5: ra điểm 0–100%, chỉ ra từ khóa và kỹ năng còn thiếu. Có thêm job tracker (liên quan card #2 của Nhật Anh) | Bản free có job tracking không giới hạn và so khớp cơ bản | Bản free chỉ hiện top 5 keyword; muốn đủ phải lên Teal+ $29/tháng (rẻ nhất khoảng $15/tháng nếu trả cả năm). Phải nhập CV vào Teal và lưu JD vào tracker trước, thêm bước | Cũng chỉ dừng ở **gợi ý sửa CV**; bước quyết định (B6) vẫn là người dùng |
+| LinkedIn — Job Match (ra mắt 01/2025) | https://www.engadget.com/social-media/linkedin-wants-you-to-apply-for-fewer-jobs-140049139.html | B2 + B4 + B6: hiện tóm tắt ngay cạnh tin, cho biết mình đáp ứng yêu cầu nào, thiếu yêu cầu nào, để quyết định có nên nộp | Miễn phí cho mọi người dùng, không phải dán gì. Không chỉ so từ khóa mà cố hiểu kinh nghiệm của mình. Mục tiêu giống nhóm: **bớt nộp vào chỗ không hợp** | **Chỉ có với tin đăng trên LinkedIn**, phụ thuộc profile có cập nhật hay không. Premium mới xem được mức độ khớp chi tiết hơn | Với tin trên LinkedIn thì pain gần như đã được giải → problem nên tập trung vào **tin ở nguồn khác** |
+
+**Kết luận research:**
+
+```text
+Bước trích kỹ năng + so khớp (B2, B4, B5) đã có nhiều công cụ làm, nhưng:
+- Chỉ chạy tốt với tin đăng trên chính nền tảng đó (vd LinkedIn) hoặc phải dán vào tool trả phí.
+- Mục tiêu của họ là sửa CV cho qua ATS, không giúp quyết định "nộp hay bỏ".
+=> Không tự xây công cụ so khớp. Phần còn trống: JD từ group Facebook / web công ty,
+   và bước quyết định B6 vẫn phải do sinh viên tự làm.
+=> Hướng nghĩ cho CP5–CP6: thử No AI trước (checklist kỹ năng có ghi cả từ đồng nghĩa + Ctrl+F),
+   so với Workflow (dán JD → trích yêu cầu kèm câu gốc trong JD → SV tự kiểm và quyết định).
+```
 
 ---
 
